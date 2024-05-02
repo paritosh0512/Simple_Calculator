@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calc">
+        <input type="text" id="display">
+        <div class="btn">
+            <input type="button" value="AC" onclick="clearvalue()">
+            <input type="button" value="DE" onclick="addNumber(value)">
+            <input type="button" value="%" onclick="addNumber(value)">
+            <input type="button" value="00" onclick="addNumber(value)">
+        </div>
+        <div class="btn">
+            <input type="button" value="7" onclick="addNumber(value)">
+            <input type="button" value="8" onclick="addNumber(value)">
+            <input type="button" value="9" onclick="addNumber(value)">
+            <input type="button" value="/" onclick="addNumber(value)">
+        </div>
+        <div class="btn">
+            <input type="button" value="4" onclick="addNumber(value)">
+            <input type="button" value="5" onclick="addNumber(value)">
+            <input type="button" value="6" onclick="addNumber(value)">
+            <input type="button" value="*" onclick="addNumber(value)">
+        </div>
+        <div class="btn">
+            <input type="button" value="1" onclick="addNumber(value)">
+            <input type="button" value="2" onclick="addNumber(value)">
+            <input type="button" value="3" onclick="addNumber(value)">
+            <input type="button" value="-" onclick="addNumber(value)">
+        </div>
+        <div class="btn">
+            <input type="button" value="0" onclick="addNumber(value)">
+            <input type="button" value="." onclick="addNumber(value)">
+            <input type="button" value="+" onclick="addNumber(value)">
+            <input type="button" value="=" onclick="result()">
+        </div>
+
+    </div>
+    
+</body>
+<script>
+    let display = document.getElementById('display')
+    function addNumber(value){
+        display.value += value
+    }
+    function result(){
+        let data =display.value
+        console.log(data)
+        let output =eval(data)
+         console.log(output)
+
+         display.value=output
+    }
+    function clearvalue(){
+        display.value=""
+    }
+</script>
+</html>

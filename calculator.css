@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calc{
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 16px;
+}
+
+#display{
+    padding: 10px 60px;
+    border: 2px solid black;
+    position: relative;
+    top: 2px;
+    left: 10px;
+    text-align: right;
+}
+.btn input{
+    width: 55px;
+    height: 55px;
+    margin: 10px;
+    /* color: white;
+    background: rgba(0, 0, 0, 0.7); */
+    font-size: 24px;
+    cursor:pointer;
+    /* border-radius: 25px; */
+}
+
+
+
